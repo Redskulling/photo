@@ -1,0 +1,82 @@
+/*Baground To Navigation Bar*/
+.topbar {
+    padding: 5px;
+    text-align: center;
+    top: 0px;
+    right: 2px;
+    left: 2px;
+}
+
+/*gets rid of the underline/blue → red link colour
+ *also makes the button have a bit of space */
+
+.homebtn a {
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+}
+ 
+
+/*makes every dropdown menu look nice*/
+.dropbtn, .homebtn{
+	text-decoration: none;
+    background-color: #e5e5e5;
+    color: black;
+    padding: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 16px;
+    border: solid;
+	border-color: #D0D0D0;
+    margin-right: 5px;
+}
+
+/*keeps buttons in line*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/*keeps the dropdown content hidden*/
+.dropdown-content {
+    display: none;
+	position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 9000000;
+}
+
+/*makes the selections look nice*/
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/*changes the color of the selection th=o a darker colour*/
+.dropdown-content a:hover {background-color: #ddd;}
+
+/*dispays the options when overing over the button*/
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown span:after {content: '\00bb';}
+.dropdown:hover .dropbtn, .homebtn:hover{background-color: #d0d0d0;}
+
+
+.top {
+    text-align: center;
+    font-size: 24px;
+}
+
+.top, .top h1{
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+
+
+.contact {
+	position: relative;
+	bottom: 0px;
+}
