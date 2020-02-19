@@ -1,0 +1,38 @@
+.column:nth-child(3n-2) {
+    margin-left: auto;
+}
+
+.column:nth-child(3n) {
+    margin-right: auto;
+}
+  
+@media screen and (max-width: 1200px) {
+    .column {
+        flex: 33%;
+        max-width: 33%;
+    }
+
+    .column:nth-child(2n-1) {
+        margin-left: auto;
+    }
+    
+    .column:nth-child(2n) {
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .column {
+        flex: 66%;
+        max-width: 66%;
+        margin-left: auto;
+        margin-right: auto;
+    }    
+}
+  
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}

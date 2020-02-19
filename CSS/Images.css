@@ -6,40 +6,55 @@ img {
     display: inline-flex;
     flex-wrap: wrap;
     padding: 0 4px;
-    width: 130%;
+    width: 100%;
 }
   
+.container {
+    align-content: flex-start;
+    margin: 0 auto;
+    width: 85%;
+}
+
 .column {
     flex: 25%;
     max-width: 25%;
     padding: 0 4px;
 	display: block;
 }
-  
+
 .column img {
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
-	display: block;
-}
-  
-@media screen and (max-width: 1200px) {
-    .column {
-        flex: 33%;
-        max-width: 33%;
-    }
+	display: inline-flexbox;
 }
 
-@media screen and (max-width: 900px) {
-    .column {
-        flex: 66%;
-        max-width: 66%;
+/*
+    Link to CSS page with 
+    .column:nth-child((#of elements)n - (#of elements - 1)) {
+        margin-left: auto;
     }
-}
-  
-@media screen and (max-width: 600px) {
-    .column {
-        flex: 100%;
-        max-width: 100%;
+
+    .column:nth-child((#of elements)n) {
+        margin-right: auto;
     }
-}
+    
+    @media screen and (max-width: 1200px) {
+        .column {
+            flex: 1/(#of rows)%;
+            max-width: 1/(#of rows)%;
+        }
+
+        .column:nth-child((#of elements - 1)n(#of elements - 2)) {
+            margin-left: auto;
+        }
+        
+        .column:nth-child((#of elements - 1)) {
+            margin-right: auto;
+        }
+    }
+
+    .
+    .
+    .
+*/
