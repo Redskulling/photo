@@ -3,6 +3,10 @@ body {
     color: #e8e6e3;
 }
 
+img {
+    image-orientation: from-image;
+}
+
 /*Baground To Navigation Bar*/
 .topbar {
     padding: 5px;

@@ -1,0 +1,31 @@
+.column:nth-child(n) {
+    margin-left: auto;
+}
+
+.column:nth-child(n) {
+    margin-right: auto;
+}
+  
+@media screen and (max-width: 1200px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+
+    .column:nth-child(n) {
+        margin-left: auto;
+    }
+    
+    .column:nth-child(n) {
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
